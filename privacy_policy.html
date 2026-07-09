@@ -29,6 +29,11 @@
         <td style="border:1px solid #ddd; padding:10px;">90일 후 자동 파기<br><em style="color:#888;">Auto-deleted after 90 days</em></td>
       </tr>
       <tr>
+        <td style="border:1px solid #ddd; padding:10px;">게시글 텍스트 사본(법적 보관용)<br><em style="color:#888;">Post content copy (legal retention)</em></td>
+        <td style="border:1px solid #ddd; padding:10px;">법적 의무 이행<br><em style="color:#888;">Legal compliance</em></td>
+        <td style="border:1px solid #ddd; padding:10px;">90일 후 자동 파기<br><em style="color:#888;">Auto-deleted after 90 days</em></td>
+      </tr>
+      <tr>
         <td style="border:1px solid #ddd; padding:10px;">작성 콘텐츠<br><em style="color:#888;">Posted content</em></td>
         <td style="border:1px solid #ddd; padding:10px;">서비스 제공<br><em style="color:#888;">Service delivery</em></td>
         <td style="border:1px solid #ddd; padding:10px;">24시간 후 자동 삭제<br><em style="color:#888;">Auto-deleted after 24 hours</em></td>
@@ -38,7 +43,7 @@
   <li>위 정보는 개인을 직접 식별할 수 없는 <strong>비식별 정보</strong>입니다.</li>
 </ol>
 <p style="color:#666; font-size:14px;"><em>The Service is a fully anonymous platform requiring no registration. We do NOT collect any personally identifiable information (name, email, phone number, etc.). Device-generated UUIDs cannot be linked to any individual by the operator.</em></p>
-<h2>제3조 (본인 확인 불가 및 외부 채널 요청 처리 안내) | Article 3 (Identity Verification Limitations)</h2>
+<h2 id="delete-data">제3조 (본인 확인 불가 및 외부 채널 요청 처리 안내) | Article 3 (Identity Verification Limitations)</h2>
 <ol>
   <li>본 서비스는 개인 식별 정보를 수집하지 않으므로, <strong>이메일·전화 등 외부 채널을 통한 데이터 열람·삭제 요청 시, 요청자가 해당 데이터의 주체임을 증명할 방법이 존재하지 않습니다.</strong></li>
   <li>따라서 외부 채널을 통한 개인 데이터 처리 요청은 본인 확인 불가를 사유로 <strong>거부될 수 있습니다.</strong></li>
@@ -59,30 +64,35 @@
 <h2>제5조 (데이터 보관 및 자동 삭제) | Article 5 (Data Retention & Auto-Deletion)</h2>
 <ol>
   <li>모든 콘텐츠(쇼츠)는 작성 후 <strong>24시간</strong>이 경과하면 자동 삭제됩니다.</li>
-  <li>법적 보관 의무가 있는 아카이브 로그(UUID, IP 주소)는 <strong>90일 후 자동 파기</strong>됩니다.</li>
+  <li>법적 보관 의무가 있는 아카이브 로그(UUID, IP 주소, 게시글 텍스트 사본)는 <strong>90일 후 자동 파기</strong>됩니다.</li>
   <li>사용자가 앱 내에서 데이터 삭제를 요청할 경우, 콘텐츠·크레딧·투표 기록은 <strong>즉시 삭제</strong>되며, 아카이브 로그는 법적 보관 기간(90일) 만료 후 자동 파기됩니다.</li>
 </ol>
+<p style="color:#666; font-size:14px;"><em>All posted content ("Shorts") is automatically deleted 24 hours after creation. Archive logs subject to legal retention (UUID, IP address, and a copy of the post text) are automatically destroyed after 90 days. If a user requests deletion within the app, content, credits, and voting records are deleted immediately, while archive logs are destroyed only after the 90-day legal retention period expires.</em></p>
 <h2>제6조 (법적 의무에 따른 정보 제공) | Article 6 (Legal Disclosure)</h2>
 <ol>
-  <li>수사기관의 적법한 영장 또는 법원의 명령이 있는 경우, 법적 보관 기간 내의 아카이브 로그(UUID, IP 주소)를 제공할 수 있습니다.</li>
-  <li>이 경우에도 제공되는 정보는 UUID와 IP 주소에 한하며, 이름·이메일 등 개인 식별 정보는 보유하고 있지 않으므로 제공이 불가합니다.</li>
+  <li>수사기관의 적법한 영장 또는 법원의 명령이 있는 경우, 법적 보관 기간 내의 아카이브 로그(UUID, IP 주소, 게시글 텍스트 사본)를 제공할 수 있습니다.</li>
+  <li>이 경우에도 제공되는 정보는 <strong>UUID, IP 주소, 게시글 텍스트 사본</strong>에 한하며, 이름·이메일 등 개인 식별 정보는 보유하고 있지 않으므로 제공이 불가합니다.</li>
 </ol>
+<p style="color:#666; font-size:14px;"><em>Upon a lawful warrant or court order, we may provide archive logs within the legal retention period (UUID, IP address, and a copy of the post text). Even in such cases, the information provided is limited to these items; we do not hold and therefore cannot provide personally identifiable information such as name or email.</em></p>
 <h2>제7조 (콘텐츠 모더레이션) | Article 7 (Content Moderation)</h2>
 <ol>
   <li>서비스는 자동화된 콘텐츠 필터링(AI Moderation, 금지어 필터)을 적용합니다.</li>
   <li>모더레이션은 콘텐츠의 안전성 검증 목적으로만 사용되며, 콘텐츠 내용을 저장하거나 제3자에게 전달하지 않습니다.</li>
   <li>다른 이용자의 신고(누적 기준)에 따라 콘텐츠가 비공개(블라인드) 처리될 수 있습니다.</li>
 </ol>
+<p style="color:#666; font-size:14px;"><em>The Service applies automated content filtering (AI moderation and a prohibited-word filter). Moderation is used solely to verify content safety and does not store content or transmit it to third parties. Content may be hidden based on a cumulative threshold of user reports.</em></p>
 <h2>제8조 (아동 보호) | Article 8 (Child Protection)</h2>
 <ol>
-  <li>본 서비스는 만 14세 미만의 아동의 이용을 의도하지 않습니다.</li>
-  <li>만 14세 미만의 아동이 서비스를 이용한 사실이 확인될 경우, 해당 데이터는 즉시 삭제됩니다.</li>
+  <li>본 서비스는 <strong>만 13세 미만</strong>의 아동의 이용을 의도하지 않습니다.</li>
+  <li>만 13세 미만의 아동이 서비스를 이용한 사실이 확인될 경우, 해당 데이터는 즉시 삭제됩니다.</li>
 </ol>
+<p style="color:#666; font-size:14px;"><em>The Service is not intended for use by children under 13. If we become aware that a child under 13 has used the Service, the related data will be deleted immediately.</em></p>
 <h2>제9조 (광고) | Article 9 (Advertising)</h2>
 <ol>
   <li>서비스 내 "Sponsored" 라벨이 표시된 콘텐츠는 광고입니다.</li>
   <li>광고는 이용자의 개인정보를 기반으로 타겟팅되지 않습니다.</li>
 </ol>
+<p style="color:#666; font-size:14px;"><em>Content labeled "Sponsored" within the Service is advertising. Advertisements are not targeted based on users' personal information.</em></p>
 <h2>제10조 (국외 이용자 — GDPR/CCPA) | Article 10 (International Users)</h2>
 <ol>
   <li>EU/EEA 거주 이용자는 GDPR에 따라 데이터 열람, 이동, 삭제 권리를 가지며, 앱 내 기능을 통해 직접 행사할 수 있습니다.</li>

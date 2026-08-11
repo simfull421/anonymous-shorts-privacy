@@ -36,8 +36,8 @@
 
 <table>
 <tr><th>Data</th><th>How it is obtained</th><th>Purpose</th><th>Retention</th></tr>
-<tr><td>Device identifier (UUID)</td><td>Randomly generated on your device at first launch</td><td>Anonymous user distinction, credit management, duplicate-vote prevention, abuse prevention</td><td>Until you request deletion</td></tr>
-<tr><td>IP address and access timestamp</td><td>Automatically logged by the server when you post content</td><td>Evidence retention to provide the information the Service holds in the event of a dispute or a lawful request from law enforcement</td><td>90 days from collection</td></tr>
+<tr><td>Device identifier (UUID)</td><td>Randomly generated on your device at first launch</td><td>Anonymous user distinction, credit management, duplicate-vote prevention, abuse prevention</td><td>Until you request deletion.<br><span style="font-size:12px;color:#666;">The copy of your UUID stored in the content archive (Section 6.3) is deleted 90 days after posting, regardless of a deletion request.</span></td></tr>
+<tr><td>IP address, source port and access timestamp</td><td>Automatically logged by the server when you post content</td><td>Evidence retention to provide the information the Service holds in the event of a dispute or a lawful request from law enforcement</td><td>90 days from collection</td></tr>
 <tr><td>Content you write (text)</td><td>Entered by you</td><td>Service provision, content moderation</td><td>24 hours in the feed; archived original kept 90 days</td></tr>
 <tr><td>Vote records</td><td>Generated when you vote</td><td>Duplicate-vote prevention, credit rewards</td><td>Deleted together with the related post</td></tr>
 <tr><td>Reporter contact (email) and report details</td><td>Provided by you when submitting a rights-infringement report or inquiry</td><td>Handling the report and notifying you of the outcome; defence of legal claims</td><td>3 years from completion of handling</td></tr>
@@ -46,7 +46,7 @@
 <h2>3. Legal Bases for Processing (GDPR Art. 6)</h2>
 <ul>
     <li><strong>Performance of a contract (Art. 6(1)(b))</strong>: processing your UUID, content, and vote records to provide the core features of the Service you request.</li>
-    <li><strong>Legitimate interests (Art. 6(1)(f))</strong>: retaining IP addresses and content archives for 90 days to prevent abuse of an anonymous service, respond to legal claims, and cooperate with lawful investigations. Given the anonymity of the Service and the short, fixed retention period, we assess that these interests are not overridden by your rights and freedoms.</li>
+    <li><strong>Legitimate interests (Art. 6(1)(f))</strong>: retaining the content archive described in Section 6.3 for 90 days to prevent abuse of an anonymous service, respond to legal claims, and cooperate with lawful investigations. Given the anonymity of the Service and the short, fixed retention period, we assess that these interests are not overridden by your rights and freedoms.</li>
     <li><strong>Legal obligation (Art. 6(1)(c))</strong>: disclosure of data where required by applicable law or a valid court order.</li>
     <li><strong>Legal obligation / legitimate interests</strong>: receiving and handling rights-infringement reports and notifying reporters of the outcome, as required under Korean law (Act on Promotion of Information and Communications Network Utilization, Art. 44-2).</li>
 </ul>
@@ -130,9 +130,18 @@
     <li>An automated server process runs every 30 minutes and permanently deletes data whose retention period has expired.</li>
     <li>Deletion is performed by physically removing the database records (hard delete). Deleted data cannot be recovered.</li>
     <li>Feed content: removed from the feed 24 hours after posting, then permanently deleted.</li>
-    <li>IP addresses and archived content: automatically deleted 90 days after creation.</li>
-    <li>If you use in-app deletion ([Settings &gt; 데이터 삭제 / "Delete data"]), your content, credits, vote records, and restriction records are deleted immediately. The 90-day archive (including IP) is retained for the remainder of its period on the legal-defense grounds described in Section 3, then deleted.</li>
+    <li>Content archive: automatically deleted 90 days after creation. See Section 6.3 below.</li>
+    <li>If you use in-app deletion ([Settings &gt; 데이터 삭제 / "Delete data"]), your content, credits, vote records, and restriction records are deleted immediately. The content archive described in 6.3 (including your device identifier and IP address) is retained for the remainder of its 90-day period, then deleted.</li>
     <li>Deletion may be suspended for specific records where required by a lawful preservation request or legal proceeding, and only for the duration of that requirement.</li>
+</ul>
+
+<h3>6.3 The content archive</h3>
+<ul>
+    <li><strong>What it holds</strong>: the original text of the post, the author's device identifier (UUID), the IP address and source port used at the time of posting, and the timestamp. It is kept separately from the data served in the feed.</li>
+    <li><strong>Why</strong>: the Service has no account system, so there is no other way to identify who wrote a post. We keep this as the minimum record needed to handle rights-infringement reports under Article 44-2 of the Korean Network Act and to respond to lawful requests from law enforcement.</li>
+    <li><strong>Retention period and its basis</strong>: 90 days from posting. No law requires us to retain this data. We set the period ourselves: Korean privacy law does not prescribe a retention period, so we referred to the three-month benchmark that Article 41(2) of the Enforcement Decree of the Protection of Communications Secrets Act sets for internet log records.</li>
+    <li><strong>Disclosure</strong>: we provide these records only in response to lawful process, such as a court-issued warrant. We do not access or use them for any other purpose.</li>
+    <li><strong>Deletion</strong>: an automated process running every 30 minutes hard-deletes records older than 90 days.</li>
 </ul>
 
 <h2>7. Your Rights</h2>
@@ -164,7 +173,7 @@
 <ul>
     <li>v1: effective July 7, 2026</li>
     <li>v2: effective upon official release (added international transfer disclosure, deletion methods, children's policy, GDPR legal bases and rights)</li>
-    <li>v3: August 2026 (added automated decision disclosure with criteria and appeal procedure; added in-app reporting channel for suspected under-14 users)</li>
+    <li>v3: August 2026 (added automated decision disclosure with criteria and appeal procedure; added in-app reporting channel for suspected under-14 users; clarified the content archive — what it holds, why, and that the 90-day period is our own policy rather than a legal retention obligation)</li>
 </ul>
 
 </body>

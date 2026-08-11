@@ -51,12 +51,35 @@
     <li><strong>Legal obligation / legitimate interests</strong>: receiving and handling rights-infringement reports and notifying reporters of the outcome, as required under Korean law (Act on Promotion of Information and Communications Network Utilization, Art. 44-2).</li>
 </ul>
 
-<h2>4. Content Moderation and Automated Processing</h2>
-<ul>
-    <li>All submitted text passes through a prohibited-word filter and an AI-based safety check (OpenAI Moderation API). Content flagged as harmful is automatically rejected or hidden.</li>
-    <li>Posts that accumulate user reports beyond a threshold are automatically hidden. Repeated violations may result in automated posting restrictions applied to the device.</li>
-    <li>These automated decisions affect only your ability to post within the Service. You can contest any moderation or restriction decision and request human review at any time by contacting <strong>anonymous.shorts.official@gmail.com</strong>. We respond within 15 days.</li>
-</ul>
+<h2>4. Content Moderation and Automated Decisions</h2>
+<p>In accordance with Article 37-2 of the Personal Information Protection Act of Korea (and Article 22 of the GDPR), we disclose below the criteria and procedures for decisions made by fully automated systems.</p>
+
+<h3>4.1 Types of automated decisions</h3>
+<table>
+<tr><th>Decision</th><th>Data processed</th><th>Criteria and procedure</th><th>Effect</th></tr>
+<tr>
+    <td>Rejecting a post</td>
+    <td>The text you submit</td>
+    <td>At submission, a prohibited-word filter and an AI-based safety check (OpenAI Moderation API) are applied in sequence. Text falling into a harmful category is refused.</td>
+    <td>The post is not published; the reason is shown on screen.</td>
+</tr>
+<tr>
+    <td>Hiding a post</td>
+    <td>Reports accumulated against that post</td>
+    <td>A post is automatically hidden once reports from other users exceed a threshold. We do not publish the exact threshold, because disclosing it would enable coordinated reporting to silence posts (abuse).</td>
+    <td>The post no longer appears in the feed.</td>
+</tr>
+<tr>
+    <td>Posting restriction</td>
+    <td>Violation records associated with the device identifier (UUID)</td>
+    <td>Devices with repeated Community Guideline violations may have posting restricted. To prevent circumvention (reinstalling the app to regenerate the identifier), the restriction may not be visibly indicated on screen.</td>
+    <td>Your posts are not shown to other users.</td>
+</tr>
+</table>
+
+<h3>4.2 Explanation and appeal</h3>
+<p>You may request an explanation of the criteria and process behind any of these decisions, and you may submit your views and ask us to review whether they can be reflected in the decision. Contact us at the address in Section 1; we will confirm whether a decision applies to your device and why, and respond within 15 days. Any restriction found to be unwarranted is lifted without delay.</p>
+<p>Where an automated decision significantly affects your rights or obligations, you may object to it. However, automated safety screening is applied to every post as a necessary part of performing our agreement with you and protecting other users; if you object to it, the posting feature will be unavailable to you. Browsing and voting remain available.</p>
 
 <h2>5. Sharing and International Transfers</h2>
 
@@ -124,6 +147,7 @@
 
 <h2>8. Children</h2>
 <p>The Service is not directed to children. You must be at least <strong>14 years old</strong>, or older where your local law sets a higher minimum age for consenting to data processing without parental authorization (up to 16 in some EU/EEA countries). We do not knowingly process children's data; if we learn that we have, we will delete it without delay.</p>
+<p>You confirm that you meet the minimum age when you first launch the app. In addition, if you come across a user who appears to be under 14, you can let us know through the in-app report menu ([Report &gt; This user appears to be under 14]). Reports are reviewed by the operator directly.</p>
 
 <h2>9. Security</h2>
 <ul>
@@ -140,6 +164,7 @@
 <ul>
     <li>v1: effective July 7, 2026</li>
     <li>v2: effective upon official release (added international transfer disclosure, deletion methods, children's policy, GDPR legal bases and rights)</li>
+    <li>v3: August 2026 (added automated decision disclosure with criteria and appeal procedure; added in-app reporting channel for suspected under-14 users)</li>
 </ul>
 
 </body>
